@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add some style to the form */
+        .form {
+            margin: 50px auto;
+            width: 400px;
+            padding: 20px;
+            border: 5px solid #ccc;
+        }
+
+        /* Style the input fields and the textarea */
+        input[type=text], textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+        }
+
+        /* Style the submit button */
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+        </style>
+</head>
+<body>
+    <h1>Customer Feedback Form</h1>
+    <!-- Create a form element with the action and method attributes -->
+    <form action="/feedback" method="POST">
+        <!-- Create a label and an input field for the name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <!-- Create a label and an input field for the email -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <!-- Create a label and a textarea for the feedback -->
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="10" cols="50" required></textarea>
+        <!-- Create a submit button -->
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>
